@@ -7,3 +7,8 @@ section {
 header {
   font-family: 'Kaisei Decol', serif !important;
 }
+
+#root {
+  height: 100vh;
+  position: relative
+}

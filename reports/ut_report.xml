@@ -1,11 +1,11 @@
 <testExecutions version="1">
-  <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should create the app" duration="34"/>
-    <testCase name="AppComponent should have as title 'Vivero El Otoño'" duration="7"/>
-  </file>
   <file path="src/app/plantas/plantas-lista/plantas-lista.component.spec.ts">
-    <testCase name="PlantasListaComponent should create" duration="26"/>
-    <testCase name="PlantasListaComponent should have a table header" duration="11"/>
-    <testCase name="PlantasListaComponent should have three rows in its table body" duration="6"/>
+    <testCase name="PlantasListaComponent should create" duration="52"/>
+    <testCase name="PlantasListaComponent should have three rows in its table body" duration="12"/>
+    <testCase name="PlantasListaComponent should have a table header" duration="15"/>
+  </file>
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should have as title 'Vivero El Otoño'" duration="18"/>
+    <testCase name="AppComponent should create the app" duration="5"/>
   </file>
 </testExecutions>

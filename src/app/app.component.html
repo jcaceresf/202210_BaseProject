@@ -1,22 +1,26 @@
-<header class="container">
-  <div class="row d-flex align-items-center">
-    <h1 class="h2 d-inline my-3">{{ title }}</h1>
-  </div>
-  <hr class="m-0" />
-  <img
-    src="./../assets/image 1.jpg"
-    alt="Un jardín soleado con diferentes pinos"
-    class="w-100 my-4"
-  />
-  <hr class="m-0" />
-</header>
-<section class="container my-4">
-  <router-outlet></router-outlet>
-</section>
-<footer class="container" id="footer">
-  <div class="row d-flex my-3 justify-content-center">
-    <span class="w-auto">
-      Contact us: +57 3102105253 - info@viveroelotonio.com - @viveroelotonio
-    </span>
-  </div>
-</footer>
+<div id="root">
+  <header class="container">
+    <div class="row d-flex align-items-center">
+      <h1 class="h2 d-inline my-3">{{ title }}</h1>
+    </div>
+    <hr class="m-0" />
+    <img
+      src="./../assets/image 1.jpg"
+      alt="Un jardín soleado con diferentes pinos"
+      class="w-100 my-4"
+    />
+    <hr class="m-0" />
+  </header>
+  <section class="container my-4">
+    <router-outlet></router-outlet>
+  </section>
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex my-3 justify-content-center">
+        <span class="w-auto">
+          Contact us: +57 3102105253 - info@viveroelotonio.com - @viveroelotonio
+        </span>
+      </div>
+    </div>
+  </footer>
+</div>
