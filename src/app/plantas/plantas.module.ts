@@ -5,5 +5,6 @@ import { PlantasListaComponent } from './plantas-lista/plantas-lista.component';
 @NgModule({
   imports: [CommonModule],
   declarations: [PlantasListaComponent],
+  exports: [PlantasListaComponent],
 })
 export class PlantasModule {}
