@@ -1,6 +1,6 @@
 <div class="w-50">
   <table class="table">
-    <thead class="bg-dark text-light">
+    <thead class="bg-dark text-light" alt="Encabezado de la tabla">
       <tr>
         <th scope="col">#</th>
         <th scope="col">Nombre común</th>
@@ -11,9 +11,9 @@
     <tbody>
       <tr *ngFor="let planta of plantas">
         <th scope="row">{{ planta.id }}</th>
-        <td>{{ planta.nombre_comun }}</td>
-        <td>{{ planta.tipo }}</td>
-        <td>{{ planta.clima }}</td>
+        <td class="text-dark">{{ planta.nombre_comun }}</td>
+        <td class="text-dark">{{ planta.tipo }}</td>
+        <td class="text-dark">{{ planta.clima }}</td>
       </tr>
     </tbody>
   </table>
