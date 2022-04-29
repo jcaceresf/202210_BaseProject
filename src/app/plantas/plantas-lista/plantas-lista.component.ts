@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Planta } from '../planta';
+import { PlantaService } from '../planta.service';
 
 @Component({
   selector: 'app-plantas-lista',
@@ -6,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./plantas-lista.component.css'],
 })
 export class PlantasListaComponent implements OnInit {
-  constructor() {}
+  plantas: Planta[] = [];
 
-  ngOnInit() {}
+  constructor(private plantaService: PlantaService) {}
+
+  ngOnInit() {
+    this.getPlantas();
+  }
+
+  getPlantas(): void {
+    this.plantaService.getPlantas().subscribe((plantas) => {
+      this.plantas = plantas;
+    });
+  }
 }
